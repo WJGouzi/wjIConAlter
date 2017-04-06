@@ -15,6 +15,7 @@
 		9BD5B4241E96148D00897271 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BD5B4221E96148D00897271 /* LaunchScreen.storyboard */; };
 		9BD5B4331E961B2900897271 /* blackBgColor@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BD5B4311E961B2900897271 /* blackBgColor@2x.png */; };
 		9BD5B4341E961B2900897271 /* blackBgColor@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BD5B4321E961B2900897271 /* blackBgColor@3x.png */; };
+		9BD5B4371E9631FB00897271 /* wjIconAlter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD5B4361E9631FB00897271 /* wjIconAlter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,8 @@
 		9BD5B4251E96148D00897271 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9BD5B4311E961B2900897271 /* blackBgColor@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blackBgColor@2x.png"; sourceTree = "<group>"; };
 		9BD5B4321E961B2900897271 /* blackBgColor@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blackBgColor@3x.png"; sourceTree = "<group>"; };
+		9BD5B4351E9631FA00897271 /* wjIConAlter-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wjIConAlter-Bridging-Header.h"; sourceTree = "<group>"; };
+		9BD5B4361E9631FB00897271 /* wjIconAlter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = wjIconAlter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,12 +69,14 @@
 				9BD5B4181E96148D00897271 /* AppDelegate.m */,
 				9BD5B41A1E96148D00897271 /* ViewController.h */,
 				9BD5B41B1E96148D00897271 /* ViewController.m */,
+				9BD5B4361E9631FB00897271 /* wjIconAlter.swift */,
 				9BD5B41D1E96148D00897271 /* Main.storyboard */,
 				9BD5B4301E961B2900897271 /* res */,
 				9BD5B4201E96148D00897271 /* Assets.xcassets */,
 				9BD5B4221E96148D00897271 /* LaunchScreen.storyboard */,
 				9BD5B4251E96148D00897271 /* Info.plist */,
 				9BD5B4141E96148D00897271 /* Supporting Files */,
+				9BD5B4351E9631FA00897271 /* wjIConAlter-Bridging-Header.h */,
 			);
 			path = wjIConAlter;
 			sourceTree = "<group>";
@@ -125,6 +130,7 @@
 					9BD5B4101E96148D00897271 = {
 						CreatedOnToolsVersion = 8.3;
 						DevelopmentTeam = 684VKU9G29;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -169,6 +175,7 @@
 			files = (
 				9BD5B41C1E96148D00897271 /* ViewController.m in Sources */,
 				9BD5B4191E96148D00897271 /* AppDelegate.m in Sources */,
+				9BD5B4371E9631FB00897271 /* wjIconAlter.swift in Sources */,
 				9BD5B4161E96148D00897271 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,11 +296,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 684VKU9G29;
 				INFOPLIST_FILE = wjIConAlter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wj.www.wjIConAlter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "wjIConAlter/wjIConAlter-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -301,11 +312,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 684VKU9G29;
 				INFOPLIST_FILE = wjIConAlter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wj.www.wjIConAlter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "wjIConAlter/wjIConAlter-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -328,6 +342,7 @@
 				9BD5B42A1E96148D00897271 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
